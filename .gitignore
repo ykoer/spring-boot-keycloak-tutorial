@@ -1,0 +1,12 @@
+node_modules
+.tmp
+.sass-cache
+.idea
+*.iml
+target/
+target/**
+docker/modules/com/redhat/lightblue/client/containercatalog-ui/main/*.pkcs12
+docker/modules/com/redhat/lightblue/client/containercatalog-ui/main/*.properties
+docker/modules/com/redhat/properties/
+scripts/pm_asks_import/results*
+scripts/pm_asks_import/config.txt

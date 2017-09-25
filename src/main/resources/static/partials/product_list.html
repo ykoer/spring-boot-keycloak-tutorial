@@ -1,0 +1,21 @@
+<div>
+    <h2>Products</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr  ng-repeat="product in products">
+            <td><a ui-sref="product_details({id: '{{product.id}}'})">{{product.name}}</a></td>
+            <td>{{product.description}}</td>
+            <td>{{product.category}}</td>
+            <td><button type="button" class="btn btn-danger btn-xs" ng-click="delete(product)">Delete</button></td>
+        </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary" ui-sref="product_new">New Product</button>
+</div>
