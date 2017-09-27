@@ -22,6 +22,18 @@
         <li><a ui-sref="home">Home</a></li>
         <li><a ui-sref="products">Products</a></li>
     </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+            <a class="dropdown-toggle nav-item-iconic" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span title="Username" class="fa pficon-user"></span>
+                <span class="username truncate ng-binding">User</span>
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a ng-href="/session/logout">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
 </nav>
 
 <div class="container">
